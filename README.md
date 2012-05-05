@@ -10,7 +10,7 @@ I usually do this from irb - change the required username and password values
 (look for instances of github_username and github_password) and do the following:
 
 require 'export_issues'
-ExportIssues.get_issues(<from>, <to>)
+ExportIssues.get_issues(from, to)
 
 Where from and to represent the range of issues you want to retrieve. The retrieved values
 (along with comments) are saved by default to a file called ghissues.csv
